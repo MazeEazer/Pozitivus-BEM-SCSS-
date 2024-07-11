@@ -9,65 +9,302 @@
 <body>
 	<header class="header">
 		<div class="header__inner container">
-			<a href="/" class="header__logo logo">
-				<img src="./images/logo.svg" alt="Pozitivus" width="220" height="36" loading="lazy" class="logo__image">
-			</a>
-			<nav class="header__menu hidden-mobile">
-				<ul class="header__menu-list">
-					<li class="header__menu-item">
-						<a href="" class="header__menu-link"> About us </a>
-					</li>
-					<li class="header__menu-item">
-						<a href="" class="header__menu-link"> Services </a>
-					</li>
-					<li class="header__menu-item">
-						<a href="" class="header__menu-link"> Use Cases </a>
-					</li>
-					<li class="header__menu-item">
-						<a href="" class="header__menu-link"> Pricing </a>
-					</li>
-					<li class="header__menu-item">
-						<a href="" class="header__menu-link"> Blog </a>
-					</li>
-				</ul>
-			</nav>
-			<button class="header__button button button-transparent hidden-mobile" type="button" >Request a quote</button>
-			<button class="header__burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
-				<span class="visually-hidden">Open notification menu</span>
-
-			</button>
-
+		  <a class="header__logo logo" href="/">
+			<img
+			  class="logo__image"
+			  src="./images/logo.svg"
+			  alt="Positivus"
+			  width="220" height="36" loading="lazy"
+			/>
+		  </a>
+		  <nav class="header__menu hidden-mobile">
+			<ul class="header__menu-list">
+			  <li class="header__menu-item">
+				<a class="header__menu-link" href="/">About us</a>
+			  </li>
+			  <li class="header__menu-item">
+				<a class="header__menu-link" href="/">Services</a>
+			  </li>
+			  <li class="header__menu-item">
+				<a class="header__menu-link" href="/">Use Cases</a>
+			  </li>
+			  <li class="header__menu-item">
+				<a class="header__menu-link" href="/">Pricing</a>
+			  </li>
+			  <li class="header__menu-item">
+				<a class="header__menu-link" href="/">Blog</a>
+			  </li>
+			</ul>
+		  </nav>
+		  <button
+			class="header__button button button--transparent hidden-mobile"
+			type="button"
+		  >
+			Request a quote
+		  </button>
+		  <button
+			class="header__burger-button burger-button visible-mobile"
+			type="button"
+			onclick="mobileOverlay.showModal()"
+		  >
+			<span class="visually-hidden">Open navigation menu</span>
+		  </button>
 		</div>
-	</header>
+	  </header>
+
+	  <main class="content">
+		<section class="section section--hidden-x container">
+			<div class="section__body">
+				<div class="hero">
+					<div class="hero__main">
+						<div class="hero__body">
+							<h1 class="hero__title">Navigating the digital landscape for success</h1>
+							<div class="hero__description">
+								<p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+							</div>
+							<button class="hero__button button">Book a consultation</button>
+						</div>
+						<img src="./images/hero-bg.svg" width="600" height="515" alt="" loading="lazy" class="hero__image">
+					</div>
+					<div class="hero__partners">
+						<h2 class="visually-hidden">Our partners</h2>
+						<ul class="hero__partners-list">
+							<li class="hero__partners-item">
+								<img width="130" height="48" src="./images/partners/1.svg" alt="1" class="hero__partners-image">
+							</li>
+							<li class="hero__partners-item">
+								<img width="130" height="48" src="./images/partners/2.svg" alt="2" class="hero__partners-image">
+							</li>
+							<li class="hero__partners-item">
+								<img width="130" height="48" src="./images/partners/3.svg" alt="3" class="hero__partners-image">
+							</li>
+							<li class="hero__partners-item">
+								<img width="130" height="48" src="./images/partners/4.svg" alt="4" class="hero__partners-image">
+							</li>
+							<li class="hero__partners-item">
+								<img width="130" height="48" src="./images/partners/5.svg" alt="5" class="hero__partners-image">
+							</li>
+							<li class="hero__partners-item">
+								<img width="130" height="48" src="./images/partners/6.svg" alt="6" class="hero__partners-image">
+							</li>
 
 
-	<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
-		<form  class="mobile-overlay__close-button-wrapper" method="dialog">
-			<button class="mobile-overlay__close-button cross-button" type="submit">
-				<span class="visually-hidden">Close navigation menu</span>
+						</ul>
+					</div>
+				</div>
+			</div> 
 
-			</button>
+		</section>
+
+		<section class="section container">
+			<header class="section__header">   
+				<h2 class="section__header puddle-bg">Services</h2>
+				<div class="section-description">
+					<p> At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include: </p>
+				</div>
+			</header>
+			<div class="section__body">
+				<div class="services">
+					<ul class="services__list grid grid--2">
+						<!-- 1 -->
+						<li class="services__item">
+							<article class="service-card">
+								<div class="service-card__body">
+									<h3 class="service-card__title">
+										<span class="puddle-bg">Search engine</span>
+										<span class="puddle-bg">optimization</span>
+									</h3>
+									<a href="" class="service-card__link">
+										<span class="service-card__link-icon-wrapper"> 
+											
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+												</svg>
+												
+											</span>
+										<span class="service-card__link-label">  Learn more </span>
+									</a>
+								</div>
+								<img src="./images/services/1.svg"  width="210" height="170" alt="" class="service-card__image">
+							</article>
+						</li>
+					<!-- 2 -->
+						<li class="services__item">
+							<article class="service-card service-card--accent-bg">
+								<div class="service-card__body">
+									<h3 class="service-card__title">
+										<span class="puddle-bg puddle-bg--light">Pay-per-click</span>
+										<span class="puddle-bg puddle-bg--light">advertising</span>
+									</h3>
+									<a href="" class="service-card__link">
+										<span class="service-card__link-icon-wrapper"> 
+											
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+												</svg>
+												
+											</span>
+										<span class="service-card__link-label"> Learn more </span>
+									</a>
+								</div>
+								<img src="./images/services/2.svg"  width="210" height="170" alt="" class="service-card__image">
+							</article>
+						</li>
+						<!-- 3 -->
+						<li class="services__item">
+							<article class="service-card service-card--dark-bg">
+								<div class="service-card__body">
+									<h3 class="service-card__title">
+										<span class="puddle-bg puddle-bg--light">Social Media</span>
+										<span class="puddle-bg puddle-bg--light">Marketing</span>
+									</h3>
+									<a href="" class="service-card__link service-card__link-light">
+										<span class="service-card__link-icon-wrapper"> 
+											
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+												</svg>
+												
+											</span>
+										<span class="service-card__link-label"> Learn more </span>
+									</a>
+								</div>
+								<img src="./images/services/3.svg"  width="210" height="170" alt="" class="service-card__image">
+							</article>
+						</li>
+						<!-- 4 -->
+						<li class="services__item">
+							<article class="service-card">
+								<div class="service-card__body">
+									<h3 class="service-card__title">
+										<span class="puddle-bg">Email</span>
+										<span class="puddle-bg">Marketing</span>
+									</h3>
+									<a href="" class="service-card__link">
+										<span class="service-card__link-icon-wrapper"> 
+											
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+												</svg>
+												
+											</span>
+										<span class="service-card__link-label"> Learn more </span>
+									</a>
+								</div>
+								<img src="./images/services/4.svg"  width="210" height="170" alt="" class="service-card__image">
+							</article>
+						</li>
+						<!-- 5 -->
+						<li class="services__item">
+							<article class="service-card service-card--accent-bg">
+								<div class="service-card__body">
+									<h3 class="service-card__title">
+										<span class="puddle-bg puddle-bg--light">Content</span>
+										<span class="puddle-bg puddle-bg--light">Creation</span>
+									</h3>
+									<a href="" class="service-card__link">
+										<span class="service-card__link-icon-wrapper"> 
+											
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+												</svg>
+												
+											</span>
+										<span class="service-card__link-label"> Learn more </span>
+									</a>
+								</div>
+								<img src="./images/services/5.svg"  width="210" height="170" alt="" class="service-card__image">
+							</article>
+						</li>
+						<!-- 6 -->
+						<li class="services__item">
+							<article class="service-card">
+								<div class="service-card__body">
+									<h3 class="service-card__title">
+										<span class="puddle-bg">Analytics and </span>
+										<span class="puddle-bg">Tracking</span>
+									</h3>
+									<a href="" class="service-card__link service-card__link-light">
+										<span class="service-card__link-icon-wrapper"> 
+											
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z" fill="#B9FF66"/>
+												</svg>
+												
+											</span>
+										<span class="service-card__link-label"> Learn more </span>
+									</a>
+								</div>
+								<img src="./images/services/6.svg"  width="210" height="170" alt="" class="service-card__image">
+							</article>
+						</li>
+					</ul>
+					<div class="services__banner banner">
+						<div class="banner__inner">
+							<div class="banner__body">
+								<h3 class="banner__title">Let`s make things happen</h3>
+								<div class="banner__description">
+									<p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+								</div>
+								<button class="banner__button button"></button>
+							</div>
+							<img src="./images/Things-happen.svg" alt="" width="494" height="394 "  class="banner__image">
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+
+
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form class="mobile-overlay__close-button-wrapper" method="dialog">
+		  <button
+			class="mobile-overlay__close-button cross-button"
+			type="submit"
+		  >
+			<span class="visually-hidden">Close navigation menu</span>
+		  </button>
 		</form>
 		<div class="mobile-overlay__body">
-			<ul class="mobile-overlay__list">
-				<li class="mobile-overlay__item">
-					<a href="/" class="mobile-overlay__link"> About us</a>
-				</li>
-				<li class="mobile-overlay__item">
-					<a href="/" class="mobile-overlay__link"> Services </a>
-				</li>
-				<li class="mobile-overlay__item">
-					<a href="/" class="mobile-overlay__link"> Use Cases </a>
-				</li>
-				<li class="mobile-overlay__item">
-					<a href="/" class="mobile-overlay__link"> Pricing </a>
-				</li>
-				<li class="mobile-overlay__item">
-					<a href="/" class="mobile-overlay__link"> Blog </a>
-				</li>
-
-			</ul>
+		  <ul class="mobile-overlay__list">
+			<li class="mobile-overlay__item">
+			  <a class="mobile-overlay__link" href="/">About us</a>
+			</li>
+			<li class="mobile-overlay__item">
+			  <a class="mobile-overlay__link" href="/">Services</a>
+			</li>
+			<li class="mobile-overlay__item">
+			  <a class="mobile-overlay__link" href="/">Use Cases</a>
+			</li>
+			<li class="mobile-overlay__item">
+			  <a class="mobile-overlay__link" href="/">Pricing</a>
+			</li>
+			<li class="mobile-overlay__item">
+			  <a class="mobile-overlay__link" href="/">Blog</a>
+			</li>
+		  </ul>
 		</div>
-	</dialog>
+	  </dialog>
+
+
 </body>
 </html>

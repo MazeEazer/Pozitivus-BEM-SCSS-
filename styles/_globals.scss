@@ -1,5 +1,7 @@
 body{
 	@include fluid-text(18,16);
+
+
 	font-family: var(--font-family-base);
 	font-weight: 400;
 	height: 1.28;
@@ -15,9 +17,7 @@ svg *{
 	transition-duration: var(--transition-duration);
 }
 
-a{
-	text-decoration: none;
-}
+
 a{
 	text-decoration: none;
 	color: inherit;
