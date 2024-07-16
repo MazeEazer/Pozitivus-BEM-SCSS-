@@ -2,11 +2,10 @@
 	padding-inline: 2px;
 	background-color: var(--color-accent);
 	border-radius: var(--border-radius-small);
-	&:not(:last-child){
-		margin-bottom: 80px;
-	}
-	&__description{
-		min-width: 580px;
+
+
+	&--light{
+		background-color: var(--color-light);
 	}
 	
 }
